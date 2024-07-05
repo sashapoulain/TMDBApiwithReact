@@ -1,0 +1,137 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css);
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+
+* {
+   font-family: 'Mulish', sans-serif;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+
+.search-container {
+   position: relative;
+   width: 40%;
+}
+
+.search-input {
+   border-radius: 20px;
+   width: 100%;
+   padding-right: 40px;
+   box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+   padding: 7px 15px;
+}
+
+.search-button {
+   position: absolute;
+   right: 0;
+   top: 0;
+   height: 100%;
+   border: none;
+   background: none;
+   padding: 0 15px;
+   font-size: 18px;
+   color: #888;
+   cursor: pointer;
+}
+
+.search-button:focus {
+   outline: none;
+}
+
+.form-control:focus {
+   color: black;
+   background-color: white;
+   border-color: white;
+   outline: 0;
+   box-shadow: 0 0 0 .25rem rgba(35, 186, 213, 0.199);
+}
+
+.main-card {
+   box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+   padding: 15px;
+   border-radius: 20px;
+}
+
+ul {
+   list-style-type: none;
+   padding: 0;
+}
+
+ul li {
+   padding: 10px 0;
+
+}
+
+.main-card .movie-card {
+   display: flex;
+   border: 1px solid rgba(35, 186, 213, 0.096);
+}
+
+.breadcrumb-item a {
+   color: #23bad5;
+   text-decoration: none;
+   font-weight: 500;
+}
+
+.main-card .movie-card img , .detail-img{
+   width: 100px;
+   object-fit: cover;
+   aspect-ratio: 16 / 27;
+}
+
+.main-card .movie-card .movie-detail {
+   padding: 10px 10px;
+   margin: auto 0;
+
+}
+
+.movie-detail-wrapper {
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+}
+
+.movie-detail-wrapper .info {
+   margin: auto 0;
+}
+
+.movie-detail-wrapper .info .movie-info {
+   font-size: 1.5rem;
+   padding-right: 10px;
+   color: black;
+}
+
+
+.movie-detail h2 {
+   font-size: 18px;
+   font-weight: bold;
+
+}
+
+.movie-detail p {
+   font-size: 14px;
+   margin: 3px 0;
+   color: #888;
+}
+
+.movie-detail .bi-star-fill {
+   color: yellow;
+}
+.movie-info{
+   cursor: pointer;
+}
+
+@media (max-device-width:480px) {
+   .navbar-brand {
+      width: 150px;
+   }
+
+   .navbar-brand img {
+      width: 100%;
+   }
+
+   .search-container {
+      width: 50%;
+   }
+}
